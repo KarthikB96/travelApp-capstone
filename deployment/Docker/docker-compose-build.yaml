@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: karthikb96/travelapp-reverseproxy 
+  backend_user:
+    build:
+      context: ../../travelapp-api-user
+    image: karthikb96/travelapp-api-user
+  backend_feed:
+    build:
+      context: ../../travelapp-api-feed 
+    image: karthikb96/travelapp-api-feed
+  frontend:
+    build:
+      context: ../../travelapp-frontend 
+    image: karthikb96/travelapp-frontend
