@@ -30,19 +30,19 @@ Navigate to the travelapp-frontend/ directory.
 Build a docker image of the frontend with docker build -t {your_docker_hub_username}/travelapp-frontend .
 
 Publish Images to Docker Hub
-Publish the reverseproxy image with docker push {your_docker_hub_username}/travelapp-reverseproxy.
-Publish the backend user image with docker push {your_docker_hub_username}/travelapp-api-user.
-Publish the backend feed image with docker push {your_docker_hub_username}/travelapp-api-feed.
-Publish the frontend image with docker push {your_docker_hub_username}/travelapp-frontend.
+1. Publish the reverseproxy image with docker push {your_docker_hub_username}/travelapp-reverseproxy.
+2. Publish the backend user image with docker push {your_docker_hub_username}/travelapp-api-user.
+3. Publish the backend feed image with docker push {your_docker_hub_username}/travelapp-api-feed.
+4. Publish the frontend image with docker push {your_docker_hub_username}/travelapp-frontend.
 
 Deploy to Kubernetes Cluster
-Navigate to the travelApp-capstone\deployment\k8s\ directory.
-configuration values are entered in aws-secret.yaml, env-configmap.yaml, env-secret.yaml.
-docker hub images are entered in backend-feed-deployment.yaml, backend-user-deployment.yaml, frontend-deployment.yaml, reverseproxy-deployment.yaml files.
-Deploy to Kubernetes cluster with kubectl apply -f {file_name_deployment}.yaml and kubectl apply -f {file_name_service}.yaml or each block.
+1. Navigate to the travelApp-capstone\deployment\k8s\ directory.
+2. configuration values are entered in aws-secret.yaml, env-configmap.yaml, env-secret.yaml.
+3. docker hub images are entered in backend-feed-deployment.yaml, backend-user-deployment.yaml, frontend-deployment.yaml, reverseproxy-deployment.yaml files.
+4. Deploy to Kubernetes cluster with kubectl apply -f {file_name_deployment}.yaml and kubectl apply -f {file_name_service}.yaml or each block.
 
 Start App As Container On Local System
-Navigate to the travelApp-capstone\deployment\Docker directory.
-Boot up images with docker-compose up.
+1. Navigate to the travelApp-capstone\deployment\Docker directory.
+2. Boot up images with docker-compose up.
 
 
