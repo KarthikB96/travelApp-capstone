@@ -14,20 +14,12 @@ https://hub.docker.com/repository/docker/karthikb96/travelapp-frontend
 2. The Deployment folder is responsible for the building the reverseproxy for the backend as well as the deployment of the application to Kubernetes.
 3. The Backend is divided into two parts one for feed functionalities (post and image upload)and another for user functionalities (registration and authentication). Frontend is in ionic.
 
-Setup:
-Create Docker Images:
-1.Reverse Proxy Image
-Navigate to the travelApp-capstone\deployment\Docker directory.
-Build a docker image of the reverseproxy with docker build -t {your_docker_hub_username}/travelapp-reverseproxy .
-2.Backend User Image
-Navigate to the travelApp-capstone\travelapp-api-feed directory.
-Build a docker image of the backend user microservice with docker build -t {your_docker_hub_username}/travelapp-api-feed .
-3.Backend Feed Image
-Navigate to the travelApp-capstone\travelapp-api-user directory.
-Build a docker image of the backend feed microservice with docker build -t {your_docker_hub_username}/travelapp-api-user.
-4.Frontend Image
-Navigate to the travelapp-frontend/ directory.
-Build a docker image of the frontend with docker build -t {your_docker_hub_username}/travelapp-frontend .
+Setup
+1. Reverse Proxy Image: Navigate to the travelApp-capstone\deployment\Docker directory. Build a docker image of the reverseproxy with docker build -t {your_docker_hub_username}/travelapp-reverseproxy .
+2. Backend User Image : Navigate to the travelApp-capstone\travelapp-api-feed directory.
+  Build a docker image of the backend user microservice with docker build -t {your_docker_hub_username}/travelapp-api-feed .
+3. Backend Feed Image: Navigate to the travelApp-capstone\travelapp-api-user directory. Build a docker image of the backend feed microservice with docker build -t {your_docker_hub_username}/travelapp-api-user.
+4. Frontend Image: Navigate to the travelapp-frontend/ directory.Build a docker image of the frontend with docker build -t {your_docker_hub_username}/travelapp-frontend .
 
 Publish Images to Docker Hub
 1. Publish the reverseproxy image with docker push {your_docker_hub_username}/travelapp-reverseproxy.
