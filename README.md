@@ -3,11 +3,11 @@ This Capstone project is based on a travel blog where users enter photos,caption
 
 The main blocks in the project is backend-feed,backend-user,frontend and reverseproxy. each block is containerised and deployed in eks.
 
-Dockerhub repositories links:
-https://hub.docker.com/repository/docker/karthikb96/travelapp-api-user
-https://hub.docker.com/repository/docker/karthikb96/travelapp-api-feed
-https://hub.docker.com/repository/docker/karthikb96/travelapp-reverseproxy
-https://hub.docker.com/repository/docker/karthikb96/travelapp-frontend
+Dockerhub repositories links
+1. https://hub.docker.com/repository/docker/karthikb96/travelapp-api-user
+2. https://hub.docker.com/repository/docker/karthikb96/travelapp-api-feed
+3. https://hub.docker.com/repository/docker/karthikb96/travelapp-reverseproxy
+4. https://hub.docker.com/repository/docker/karthikb96/travelapp-frontend
 
 #Description:
 1. The Project is based on a travel blogging website where travellers can share images and their story and details.
